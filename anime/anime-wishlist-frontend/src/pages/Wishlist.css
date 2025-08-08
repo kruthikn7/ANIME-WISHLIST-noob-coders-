@@ -1,0 +1,89 @@
+/* Dark background and white text for wishlist page */
+.wishlist-page {
+  background-color: #121212;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.wishlist-subheader {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #ccc;
+}
+
+.wishlist-search {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.wishlist-search-input {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.wishlist-search-input::placeholder {
+  color: #888;
+}
+
+.wishlist-search-input:focus {
+  border-color: #0073e6;
+}
+
+.wishlist-search-button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #0073e6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wishlist-search-button:hover {
+  background-color: #005bb5;
+}
+
+/* Header style */
+.wishlist-header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Vertical container for anime cards */
+.wishlist-anime-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 10px;
+}
+
+/* Hide scrollbar for Webkit browsers */
+.wishlist-anime-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for other browsers */
+.wishlist-anime-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Empty wishlist message */
+.wishlist-empty {
+  text-align: center;
+  padding: 40px 0;
+  color: #888;
+  font-size: 1.2rem;
+}

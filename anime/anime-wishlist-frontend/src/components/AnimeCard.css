@@ -1,0 +1,92 @@
+.anime-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  margin-bottom: 24px;
+  width: auto;
+  flex-shrink: 0;
+  max-width: 200px;
+}
+
+.anime-card:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.9);
+  transform: translateY(-4px);
+}
+
+.anime-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.anime-content {
+  padding: 16px;
+  color: white;
+  background: none;
+  position: static;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.anime-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.anime-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+.anime-btn {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  font-weight: 600;
+  background-color: #222;
+  color: white;
+  box-shadow: none;
+}
+
+.anime-btn:hover {
+  background-color: #444;
+  box-shadow: none;
+}
+
+/* Badge label on top-left corner */
+.anime-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #0073e6;
+  color: white;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 6px rgba(0, 115, 230, 0.6);
+}

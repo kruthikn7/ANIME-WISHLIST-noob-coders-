@@ -1,0 +1,78 @@
+.navbar {
+  background-color: #000000;
+  color: white;
+  box-shadow: none;
+  padding: 12px 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: white;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #0073e6;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+/* Optional bright blue button for call to action */
+.navbar-cta-button {
+  background-color: #0073e6;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-cta-button:hover {
+  background-color: #005bb5;
+}
+
+/* Login/logout button style */
+.nav-link.btn-link {
+  background-color: #0073e6;
+  color: white !important;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link.btn-link:hover {
+  background-color: #005bb5;
+  color: white !important;
+}
